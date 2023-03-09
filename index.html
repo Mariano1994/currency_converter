@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- FAVICON -->
+    <link rel="icon" href="/assets/arrows-exchange.svg" />
+
     <!-- GOOGLE FONTS  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -109,8 +112,12 @@
       </section>
       <section class="exchange">
         <h2>Exchange rate</h2>
-        <div class="wrapper"></div>
+        <div class="wrapper">
+          <div id="chart"></div>
+        </div>
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
