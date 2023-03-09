@@ -144,6 +144,8 @@ ul {
   max-height: 17rem;
   margin-top: 0.8rem;
   overflow-y: scroll;
+  position: relative;
+  z-index: 999;
 }
 
 li {
@@ -160,4 +162,42 @@ li {
 /* EXCHANGE - CAMBIO */
 .exchange .wrapper {
   margin-top: 2.4rem;
+}
+
+.tooltip {
+  background: white;
+  box-shadow: 0 0.4rem 1.6rem rgb(15 23 42 / 0.15);
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+}
+
+.chart-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: -2.2rem 0.8rem 0 4.8rem;
+}
+
+.chart-controls button {
+  display: grid;
+  place-content: center;
+  background: transparent;
+  border: none;
+  width: 4rem;
+  height: 2rem;
+
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  padding: 0.4rem 0.8rem;
+
+  text-align: center;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.chart-controls button:hover,
+.chart-controls button.active {
+  background: #7c3aed;
+  color: white;
+  border-radius: 999px;
 }
