@@ -201,3 +201,28 @@ li {
   color: white;
   border-radius: 999px;
 }
+
+/* RESPONSIVE */
+@media (max-width: 48rem) {
+  :root {
+    font-size: 55%;
+  }
+
+  main {
+    padding: 1.6rem;
+    gap: 3.2rem;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+
+  .converter .wrapper {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .money-wrapper {
+    width: 100%;
+  }
+}
