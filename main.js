@@ -56,7 +56,7 @@ const options = {
     tickAmount: 4,
     labels: {
       formatter: (value) => {
-        return value.toFixed(1).replace(".", ",");
+        return value.toFixed(1);
       },
     },
   },
@@ -83,10 +83,7 @@ const options = {
   tooltip: {
     custom: function ({ series, seriesIndex, dataPointIndex, w }) {
       return `<div class="tooltip">
-    <span>${String(series[seriesIndex][dataPointIndex]).replace(
-      ".",
-      ","
-    )}</span>
+    <span>${String(series[seriesIndex][dataPointIndex], ",")}</span>
     <span>${new Date(
       w.globals.seriesX[seriesIndex][dataPointIndex]
     ).toLocaleDateString("en", {
