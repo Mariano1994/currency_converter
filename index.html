@@ -15,6 +15,13 @@
 
     <!-- STYLES  -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- FLAG ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
+
     <!-- TITLE -->
     <title>Currency_Converter</title>
   </head>
@@ -22,9 +29,87 @@
     <main>
       <section class="converter">
         <h2>Currency converter</h2>
+        <div class="wrapper">
+          <div class="money-wrapper">
+            <input type="text" class="amount" value="$1.000" />
+            <div class="dropdown">
+              <div class="selected">
+                <span class="fi fi-us fis"></span>
+                USD
+              </div>
+
+              <ul>
+                <li>
+                  <span class="fi fi-ao fis"></span>
+                  AOA
+                </li>
+
+                <li>
+                  <span class="fi fi-ca fis"></span>
+                  CAN
+                </li>
+
+                <li>
+                  <span class="fi fi-eu fis"></span>
+                  EUR
+                </li>
+
+                <li>
+                  <span class="fi fi-gb fis"></span>
+                  GBP
+                </li>
+
+                <li>
+                  <span class="fi fi-br fis"></span>
+                  BRL
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="middle">
+            <img src="./assets/arrows-exchange.svg" alt="change currency" />
+          </div>
+          <div class="money-wrapper">
+            <input readonly type="text" class="amount" value="511.56kz" />
+            <div class="dropdown">
+              <div class="selected">
+                <span class="fi fi-ao fis"></span>
+                AOA
+              </div>
+
+              <ul>
+                <li>
+                  <span class="fi fi-us fis"></span>
+                  USD
+                </li>
+
+                <li>
+                  <span class="fi fi-ca fis"></span>
+                  CAN
+                </li>
+
+                <li>
+                  <span class="fi fi-eu fis"></span>
+                  EUR
+                </li>
+
+                <li>
+                  <span class="fi fi-gb fis"></span>
+                  GBP
+                </li>
+
+                <li>
+                  <span class="fi fi-br fis"></span>
+                  BRL
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="currency">
+      <section class="exchange">
         <h2>Exchange rate</h2>
+        <div class="wrapper"></div>
       </section>
     </main>
   </body>
